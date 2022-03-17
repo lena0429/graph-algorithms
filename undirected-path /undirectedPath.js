@@ -26,7 +26,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
     // first define a helper function to convert the edges list to adjacency list
     const graph = buildGraph(edges);
 
-    // secondly, define a depth first traversal function that return a boolean
+    // secondly, define a depth first traversal function that return a boolean and also gardian any infiniate loop
     // note that we use set to check if the node is visited or not  
     return hasPath(graph, nodeA, nodeB, new Set())
 }
