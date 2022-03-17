@@ -13,14 +13,14 @@ It is important to obey the directions of the arrows when solving this problem a
 Note that you should NEVER travel UPSTREAM.
 
 ### Big O - Version 1
-* n = numbers of nodes
-* e = numbers of edges
+* n = the number of nodes
+* e = the number of edges
 * Time Complexity: O(e) - because we have to travel through every single edge of the graph
 * Space Complexity: O(n) - because the worst case is that I have to put every node on the stack/queue. 
 
 ### Big O - Version 2
-* n = numbers of nodes
-* n² = numbers of edges
+* n = the number of nodes
+* n² = the number of edges
 * Time Complexity: O(n²) - the worst case is shown as below
 <img src="./worst-case-graph.JPG" alt="worst case">
 
