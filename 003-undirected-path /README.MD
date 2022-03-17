@@ -11,5 +11,6 @@ Note that the cycle is important to watch out for in any graph because if we don
 
 ### Bog O
 * n: the number of nodes
-* Time Complexity: O(n²)
+* e : the number of edges
+* Time Complexity: O(e)
 * Space Complexity: O(n)

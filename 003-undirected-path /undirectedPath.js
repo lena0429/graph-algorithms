@@ -47,7 +47,7 @@ const buildGraph = (edges) => {
 const hasPath = (graph, src, dst, visited) => {
     if (src === dst) return true;  // base case
 
-    if (visitied.has(src)) return false;
+    if (visited.has(src)) return false;
     visited.add(src);
     for (let neighbor of graph[src]) {
         if (hasPath(graph, neighbor, dst, visited) === true) {
