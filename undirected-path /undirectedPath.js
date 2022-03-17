@@ -26,8 +26,9 @@ const undirectedPath = (edges, nodeA, nodeB) => {
     // first define a helper function to convert the edges list to adjacency list
     const graph = buildGraph(edges);
 
-    // secondly, define a depth first traversal function that return a boolean  
-    return hasPath(graph, nodeA, nodeB)
+    // secondly, define a depth first traversal function that return a boolean
+    // note that we use set to check if the node is visited or not  
+    return hasPath(graph, nodeA, nodeB, new Set())
 }
 
 const buildGraph = (edges) => {
@@ -43,11 +44,13 @@ const buildGraph = (edges) => {
     return graph;
 }
 
-const hasPath = (graph, src, dst) => {
+const hasPath = (graph, src, dst, visited) => {
     if (src === dst) return true;  // base case
 
+    if (visitied.has(src)) return false;
+    visited.add(src);
     for (let neighbor of graph[src]) {
-        if (hasPath(graph, neighbor, nodeB) === true) {
+        if (hasPath(graph, neighbor, dst, visited) === true) {
             return true
         } 
     }
