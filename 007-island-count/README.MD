@@ -8,7 +8,8 @@ The position (node) of grid can be designated using a pair of row and column. Gi
 An island is considered as a vertical or horizontal connected region of land. 
 
 ### Procedure
-
+* I need some nested code to iterate through every possible row column combinations every position.
+* I need some depth first traversal code to explore any single island.  
 
 ### Big O
 * c = # of column
