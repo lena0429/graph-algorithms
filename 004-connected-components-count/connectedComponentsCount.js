@@ -1,13 +1,13 @@
 const connectedComponentsCount = (graph) => {
     const visited = new Set();
-    const count = 0;
+    let count = 0;
 
     // we need some iterative code to help us hop to different connected components
     // we also need some traveral code to explore some single component as far as possible
 
     // use in in the for loop will give us the key of key-value pairs from the object
     for (let node in graph) {
-        // console.log(visited)
+        // console.log(visited);
         if( explore(graph, node, visited) === true) {
             count += 1
         };
