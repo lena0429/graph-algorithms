@@ -2,7 +2,7 @@ const largestComponent = (graph) => {
     let largest = 0;
     const visited = new Set();
 
-    // iterate over each node in the graph
+    // iterate over each node in the graph and make sure you can hop to different 
     for (let node in graph) {
         let size = exploreSize(graph, node, visited)
         if (size > largest) {
