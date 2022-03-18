@@ -33,10 +33,18 @@ const buildGraph = (edges) => {
         // if a is not in the graph as a key, it should be created for the first time
         // and it is initialized as an empty array
         if (!(a in graph)) graph[a] = []; 
-        if (!b(b in graph)) graph[b] = [];
+        if (!(b in graph)) graph[b] = [];
         // add neighbors
         graph[a].push(b);
         graph[b].push(a);
     }
     return graph;
 }
+
+const myEdges = [
+    ['w', 'x'],
+    ['x', 'y'],
+    ['z', 'y'],
+    ['z', 'v'],
+    ['w', 'v']
+]

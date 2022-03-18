@@ -21,3 +21,6 @@ Exploring one direction as far as possible before switching directions.
 
 ### Breadth First Traversal - Queue (First in, first out)
 The breadth first traversal tends to explore all directions EVENLY, instead of just favoring one direction all the way through. 
+
+# Credit
+Toturial video from https://www.youtube.com/watch?v=tWVWeAqZ0WU&t=5977s
